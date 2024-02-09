@@ -1,0 +1,194 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3 ,h4 ,h5 ,h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/* Headings */
+
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* Nav Bar */
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-left: 40px;
+    font-weight: 300;
+}
+
+.home {
+    font-weight: 600;
+}
+
+/* Title */
+
+#title {
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+.image-col {
+    position: relative;
+}
+
+/* Features */
+
+.features-icon {
+    color: #ef8172;
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.features-icon:hover {
+    color: #ff4c68;
+}
+
+.feature-text {
+    padding: 6%;
+}
+
+.promises {
+    font-size: 1.5rem;
+}
+
+.guarantee {
+    color: #8f8f8f;
+}
+
+#features {
+    position: relative;
+}
+
+/* Testimonials */
+
+#testimonials {
+    background-color: #ef8172;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Press */
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+    padding: 100px;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* Footer */
+
+#footer {
+    background-color: #fff;
+}
+
+.copyright {
+    color: #8f8f8f;
+    font-size: 120%;
+}
+
+.footer-icon {
+    padding: 1%;
+    font-size: 120%;
+}
+
+.skip-to-main-content-link {
+    position: absolute;
+    left:     -10000px;
+}
+
+@media (max-width:1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
