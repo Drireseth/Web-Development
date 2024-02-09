@@ -1,0 +1,401 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #FFFBF5;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+img {
+    width: 30vw;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+p {
+    color: black;
+}
+
+button {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #F9F3CC;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(9, auto);
+    padding: 0 3rem 0 3rem;
+}
+
+.h1-div {
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+    align-self: center;
+}
+
+.matrix {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+    padding-right: 0.5rem;
+}
+
+.map-tb {
+    border-spacing: 0.3rem;
+}
+
+.map-tb td {
+    width: 3vw;
+    height: 3vw;
+    background-color: #F9F3CC;
+    border: 3px solid #F9F3CC;
+    border-radius: 0.3rem;
+    text-align: center;
+    position: relative;
+}
+
+.season-points-div {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+    justify-self: center;
+}
+
+.season-tb {
+    border-spacing: 1rem;
+}
+
+.sum-points-cell {
+    line-height: 0;
+    text-align: center;
+}
+
+.season-tb .season.active {
+    opacity: 1;
+}
+
+.season-tb .season {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.spring {
+    background-color: #A6CF98;
+    border: 3px solid #557C55;
+}
+
+.summer {
+    background-color: #FFBB5C;
+    border: 3px solid #FF9B50;
+}
+
+.fall {
+    background-color: #DFA878;
+    border: 3px solid #BA704F;
+}
+
+.winter {
+    background-color: #64CCC5;
+    border: 3px solid #176B87;
+}
+
+.spring-color {
+    color: #557C55;
+}
+
+.summer-color {
+    color: #FF9B50;
+}
+
+.fall-color {
+    color: #BA704F;
+}
+
+.winter-color {
+    color: #176B87;
+}
+
+.spring-mission {
+    border: 3px solid #557C55;
+    border-radius: 1.3rem;
+}
+
+.summer-mission {
+    border: 3px solid #FF9B50;
+    border-radius: 1.3rem;
+}
+
+.fall-mission {
+    border: 3px solid #BA704F;
+    border-radius: 1.3rem;
+}
+
+.winter-mission {
+    border: 3px solid #176B87;
+    border-radius: 1.3rem;
+}
+
+.image-container-div.active {
+    opacity: 1;
+}
+
+.curr-season-div {
+    grid-column: 3 / 5;
+    grid-row: 3 / 3;
+    line-height: 0px;
+    padding-top: 2rem;
+}
+
+.image-container-div {
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 0.4;
+}
+
+.mission-group {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    font-size: 2rem;
+}
+
+.mission-points {
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.missions-div {
+    padding-top: 0.5rem;
+    grid-column: 3 / 5;
+    grid-row: 4 / 8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    line-height: 0px;
+}
+
+.season-left-div {
+    grid-column: 3 / 5;
+    grid-row: 8 / 8;
+    line-height: 0;
+}
+
+.element-text-div {
+    grid-column: 1 / 2;
+    grid-row: 5 / 5;
+    line-height: 0;
+}
+
+.rotate-button-div {
+    grid-column: 1 / 2;
+    grid-row: 6 / 6;
+    padding-top: 1rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.mirror-button-div {
+    grid-column: 1 / 2;
+    grid-row: 7 / 7;
+    padding-top: 1rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.drawn-element-div {
+    grid-column: 2 / 3;
+    grid-row: 5 / 9;
+    line-height: 0;
+}
+
+.element-tb {
+    border-spacing: 0.3rem;
+    margin: 0 auto;
+}
+
+.element-tb td {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.element-time {
+    position: absolute;
+}
+
+.hover {
+    opacity: 0.5;
+}
+
+.map-tb td.mountain {
+    border-color: #BA704F;
+    background-color: #BA704F;
+    color: #6C3428;
+}
+
+.map-tb td.forest {
+    border-color: #79AC78;
+    background-color: #79AC78;
+    color: #004225;
+}
+
+.map-tb td.town {
+    border-color: #D80032;
+    background-color: #D80032;
+    color: #3D0C11;
+}
+
+.map-tb td.farm {
+    border-color: #FFD95A;
+    background-color: #FFD95A;
+    color: #C07F00;
+}
+
+.map-tb td.water {
+    border-color: #0174BE;
+    background-color: #0174BE;
+    color: #0C356A;
+}
+
+.element-tb td.mountain {
+    border-color: #BA704F;
+    background-color: #BA704F;
+    color: #6C3428;
+}
+
+.element-tb td.forest {
+    border-color: #79AC78;
+    background-color: #79AC78;
+    color: #004225;
+}
+
+.element-tb td.town {
+    border-color: #D80032;
+    background-color: #D80032;
+    color: #3D0C11;
+}
+
+.element-tb td.farm {
+    border-color: #FFD95A;
+    background-color: #FFD95A;
+    color: #C07F00;
+}
+
+.element-tb td.water {
+    border-color: #0174BE;
+    background-color: #0174BE;
+    color: #0C356A;
+}
+
+.overlay {
+    background-color: rgba(1, 1, 1, 0.7);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#not-placeable {
+    border-color: red;
+}
+
+#placeable {
+    border-color: green;
+}
+
+@media (min-width: 1375px) {
+    img {
+        width: 100%;
+    }
+
+    .matrix {
+        grid-row: 2 / 9;
+    }
+
+    .missions-div {
+        grid-column: 3 / 5;
+        grid-row: 4 / 4;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(20rem, 1fr));
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .missions-top-left-div {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .missions-top-right-div {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .missions-bottom-left-div {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+
+    .missions-bottom-right-div {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .season-left-div {
+        grid-row: 5 / 5;
+    }
+
+    .season-tb .season {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .element-text-div {
+        grid-column: 3 / 4;
+        grid-row: 6 / 6;
+    }
+
+    .rotate-button-div {
+        grid-column: 3 / 4;
+        grid-row: 7 / 7;
+    }
+
+    .mirror-button-div {
+        grid-column: 3 / 4;
+        grid-row: 8 / 8;
+    }
+
+    .drawn-element-div {
+        grid-column: 4 / 5;
+        grid-row: 6 / 9;
+    }
+}
+
+@media (max-width: 1375px) {
+    .image-container-div {
+        width: 30vw;
+    }
+}

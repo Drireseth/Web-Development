@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A térképész</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d211da0883.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="h1-div">
+            <h1>Burgonya térkép</h1>
+        </div>
+
+        <div class="matrix">
+            
+        </div>
+
+        <div class="season-points-div">
+            <table class="season-tb">
+                <tr>
+                    <td class="spring season">Tavasz: <br> 0 pont</td>
+                    <td class="summer season">Nyár: <br> 0 pont</td>
+                    <td class="fall season">Ősz: <br> 0 pont</td>
+                    <td class="winter season">Tél: <br> 0 pont</td>
+                </tr>
+                <tr>
+                    <td class="sum-points-cell" colspan="4">
+                        <p>Összesen: 0 pont</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="curr-season-div">
+            <p class="curr-season-p">Jelenlegi évszak: Tavasz (AB)</p>
+            <hr>
+        </div>
+
+        <div class="missions-div">
+            <div class="missions-top-left-div">
+                <div class="image-container-div">
+                    <img src="images/gazdag_varos.png" alt="">
+                    <div class="mission-points">(0 pont)</div>
+                    <div class="mission-group">A</div>
+                </div>
+            </div>
+            <div class="missions-top-right-div">
+                <div class="image-container-div">
+                    <img src="images/fasor.png" alt="">
+                    <div class="mission-points">(0 pont)</div>  
+                    <div class="mission-group">B</div>
+                </div>
+            </div>
+            <div class="missions-bottom-left-div">
+                <div class="image-container-div">
+                    <img src="images/krumpliontozes.png" alt="">
+                    <div class="mission-points">(0 pont)</div>
+                    <div class="mission-group">C</div>
+                </div>
+            </div>
+            <div class="missions-bottom-right-div">
+                <div class="image-container-div">
+                    <img src="images/hatarvidek.png" alt="">
+                    <div class="mission-points ">(0 pont)</div>
+                    <div class="mission-group">D</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="season-left-div">
+            <p></p>
+            <hr>
+        </div>
+
+        <div class="element-text-div">
+            <p>Lehelyezendő elem: </p>
+        </div>
+
+        <div class="rotate-button-div">
+            <button>Forgatás</button>
+        </div>
+
+        <div class="mirror-button-div">
+            <button>Tükrözés</button>
+        </div>
+
+        <div class="drawn-element-div">
+            <p class="element-time"></p>
+            <div class="element"></div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
